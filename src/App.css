@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem  ;
+  padding-right: 1.5rem ;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.grid{
+  display: grid;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  padding: .6rem 1.5rem;
+  background: #038982;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #48b1bf, #038982);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #48b1bf, #038982); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
+.btn a{
+  font-weight: 500;
+  color: #fff;
+}
+.btn:hover{
+  background: #04c0b6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #53cddd, #04c0b6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #53cddd, #04c0b6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+img, video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+body{
+  background-color: rgb(241, 243, 243);
+}
+@media screen and (min-width: 1240px){
+   .container{
+    width: 80% !important;
+    margin: auto !important;
+   }
+   .section{
+    padding: 6rem 0 4rem;
+   }
+}
+@media screen and (min-width: 2560px){
+    body{
+       zoom: 1.7;
+    }
 }
